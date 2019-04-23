@@ -5,24 +5,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PaulinC
+/*
 {
     class Program
     {
         static void Main(string[] args)
         {
-            /*         
-            char harjoitus24;
+               
+            char harjoitus31;
             string tek1 , tek2, kokoteksti;
-            tek1 = "O";
-            tek2 = "hjelmointi";
-            kokoteksti = tek1 + tek2;
-            Console.WriteLine(kokoteksti);           
-            Console.WriteLine("Paina jotain");
-            Console.ReadKey();
+			Console.Write("Kirjoita teksti‰:");
+			tek1 = Console.ReadLine()):
+			Console.WriteLine(tek1);
+           
 
             char harjoitus25;
             int ika;
-            Console.Write("Anna ik‰si: ");
+           
             ika = Convert.ToInt32(Console.ReadLine());
             if (ika < 25)
             {
@@ -42,7 +41,7 @@ namespace PaulinC
 
             Console.Write("Anna tuumat: ");
             tuumasentti = 2.54;
-            tuumamitta = Convert.ToInt32(Console.ReadLine());
+            tuumamitta = Convert.ToDouble(Console.ReadLine());
             sentit = (double)tuumamitta*tuumasentti;
             Console.WriteLine(tuumamitta + " tuumaa on " + sentit + " senttimetri‰");
             Console.WriteLine("Paina jotain");
@@ -95,8 +94,6 @@ namespace PaulinC
             Console.ReadKey();
 
             char harjoitus210;
-            */
-
             double pituus;
             double paino;
             double tuplapituus;
@@ -112,7 +109,256 @@ namespace PaulinC
             Console.WriteLine("Painokertoimesi on " + String.Format("{0:0.00}", painokerroin) + " ja LAIHDUTA");
             Console.WriteLine("Paina jotain");
             Console.ReadKey();
-                                          
+*/                                        
         }
     }
 }
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+/*
+namespace harjoitus31
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string teksti;
+            Console.Write("Kirjoita teksti‰:");
+            teksti=Console.ReadLine();
+			Console.WriteLine(teksti);
+            Console.ReadKey();
+        }
+    }
+}
+
+namespace harjoitus32
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string teksti, sana;
+            sana = "hevonen";
+            Console.Write("Arvaa joku el‰in: ");
+            teksti = Console.ReadLine();
+            if (teksti == sana)
+            {
+                Console.WriteLine("Arvasit oikein");
+            }
+            else
+            {
+                Console.WriteLine("Arvasit v‰‰rin, oikea el‰in oli " + sana);
+            }
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+          
+        }
+    }
+}
+
+namespace harjoitus33
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int luku1, luku2;
+            luku2 = 100;
+            Console.Write("Arvaa joku luku: ");
+            luku1 = int.Parse(Console.ReadLine());
+            if (luku1 == luku2)
+            {
+                Console.WriteLine("Arvasit oikein");
+            }
+            else
+            {
+                Console.WriteLine("Arvasit v‰‰rin, oikea luku oli " + luku2);
+            }
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+
+        }
+    }
+}
+
+namespace harjoitus34
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int luku1, luku2;
+            luku2 = 100;
+            Console.Write("Arvaa joku luku: ");
+            luku1 = int.Parse(Console.ReadLine());
+            if (luku1 == luku2)
+            {
+                Console.WriteLine("Arvasit oikein");
+            }
+            else if (luku1 > luku2)
+            {
+                Console.WriteLine("Arvasit v‰‰rin, luku on liian suuri");
+            }
+            else
+            {
+                Console.WriteLine("Arvasit v‰‰rin, luku on liian pieni");
+            }
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+namespace harjoitus35
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double  luku1, luku2, tulos;
+            Console.Write("Anna luku1: ");
+            luku1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Anna luku2: ");
+            luku2 = int.Parse(Console.ReadLine());
+            tulos = (double)luku1 + luku2;
+            Console.WriteLine(luku1 + " + " + luku2 + " = " + tulos);
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+
+namespace harjoitus36
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sade, ala , pii;
+            Console.Write("Anna ympyr‰n s‰de: ");
+            pii = Math.PI;
+            sade = int.Parse(Console.ReadLine());
+            ala = (double)pii * sade * sade;
+            Console.WriteLine("Ympyr‰n ala on " + ala);
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+
+namespace harjoitus37
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double pituus;
+            double paino;
+            double tuplapituus;
+            double painokerroin;
+
+            Console.Write("Anna pituutesi: ");
+            pituus = double.Parse(Console.ReadLine());
+            Console.Write("Anna painosi: ");
+            paino = double.Parse(Console.ReadLine());
+
+            tuplapituus = (double)pituus * pituus / 10000;
+            painokerroin = (double)paino / tuplapituus;
+            Console.WriteLine("Painokertoimesi on " + String.Format("{0:0.00}", painokerroin) + " ja LAIHDUTA");
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+
+namespace harjoitus38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double luku1, luku2, tulos;
+            string merkki;
+
+            Console.Write("Anna luku1: ");
+            luku1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Anna luku2: ");
+            luku2 = int.Parse(Console.ReadLine());
+            
+            Console.Write("Anna laskutapa : ");
+            merkki = Console.ReadLine();
+
+            string lause = luku1 + merkki + luku2 + " = ";
+
+            if (merkki == "*")
+            {
+                tulos = (double)luku1 * luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "+")
+            {
+                tulos = (double)luku1 + luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "-")
+            {
+                tulos = (double)luku1 - luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "/")
+            {
+                tulos = (double)luku1 / luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else 
+            {
+                Console.WriteLine("nyt yrit‰t jotain kvanttifysiikkaa");
+            }
+
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+*/
+namespace harjoitus311
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int lampotila;
+            string merkki;
+
+            Console.Write("Anna veden l‰mpˆtila: ");
+            lampotila = int.Parse(Console.ReadLine());
+
+            if (lampotila > 100)
+            {
+                Console.WriteLine("hˆyry‰");
+            }
+            else if (lampotila > 0)
+            {
+                Console.WriteLine("vett‰");
+            }
+            else if (lampotila > -273)
+            {
+                Console.WriteLine("j‰‰t‰");
+                        }
+            else
+            {
+                Console.WriteLine("m‰n alle absoluuttisen nollapisteen");
+            }
+
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+
+

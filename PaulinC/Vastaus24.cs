@@ -3,116 +3,246 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace PaulinC
+/*
+namespace harjoitus31
 {
     class Program
     {
         static void Main(string[] args)
         {
-            /*         
-            char harjoitus24;
-            string tek1 , tek2, kokoteksti;
-            tek1 = "O";
-            tek2 = "hjelmointi";
-            kokoteksti = tek1 + tek2;
-            Console.WriteLine(kokoteksti);           
-            Console.WriteLine("Paina jotain");
+            string teksti;
+            Console.Write("Kirjoita tekstiä:");
+            teksti=Console.ReadLine();
+			Console.WriteLine(teksti);
             Console.ReadKey();
+        }
+    }
+}
 
-            char harjoitus25;
-            int ika;
-            Console.Write("Anna ikäsi: ");
-            ika = Convert.ToInt32(Console.ReadLine());
-            if (ika < 25)
+namespace harjoitus32
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string teksti, sana;
+            sana = "hevonen";
+            Console.Write("Arvaa joku eläin: ");
+            teksti = Console.ReadLine();
+            if (teksti == sana)
             {
-                Console.WriteLine("Olet " + ika + " vuotias ja ihan lapsi vielä");
+                Console.WriteLine("Arvasit oikein");
             }
             else
             {
-                Console.WriteLine("Olet " + ika + " vuotias ja kohta eläkkeellä");
+                Console.WriteLine("Arvasit väärin, oikea eläin oli " + sana);
             }
             Console.WriteLine("Paina jotain");
             Console.ReadKey();
-            
-            char harjoitus26;
-            double tuumamitta;
-            double sentit;
-            double tuumasentti;
-
-            Console.Write("Anna tuumat: ");
-            tuumasentti = 2.54;
-            tuumamitta = Convert.ToInt32(Console.ReadLine());
-            sentit = (double)tuumamitta*tuumasentti;
-            Console.WriteLine(tuumamitta + " tuumaa on " + sentit + " senttimetriä");
-            Console.WriteLine("Paina jotain");
-            Console.ReadKey();
-
-            char harjoitus27;
-            int luku1, luku2;
-            int tulos;
           
+        }
+    }
+}
+
+namespace harjoitus33
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int luku1, luku2;
+            luku2 = 100;
+            Console.Write("Arvaa joku luku: ");
+            luku1 = int.Parse(Console.ReadLine());
+            if (luku1 == luku2)
+            {
+                Console.WriteLine("Arvasit oikein");
+            }
+            else
+            {
+                Console.WriteLine("Arvasit väärin, oikea luku oli " + luku2);
+            }
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+
+        }
+    }
+}
+
+namespace harjoitus34
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int luku1, luku2;
+            luku2 = 100;
+            Console.Write("Arvaa joku luku: ");
+            luku1 = int.Parse(Console.ReadLine());
+            if (luku1 == luku2)
+            {
+                Console.WriteLine("Arvasit oikein");
+            }
+            else if (luku1 > luku2)
+            {
+                Console.WriteLine("Arvasit väärin, luku on liian suuri");
+            }
+            else
+            {
+                Console.WriteLine("Arvasit väärin, luku on liian pieni");
+            }
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+namespace harjoitus35
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double  luku1, luku2, tulos;
             Console.Write("Anna luku1: ");
-            luku1 = Convert.ToInt32(Console.ReadLine());
+            luku1 = int.Parse(Console.ReadLine());
+
             Console.Write("Anna luku2: ");
-            luku2 = Convert.ToInt32(Console.ReadLine());
-
-            tulos = luku1 * luku2;
-            Console.WriteLine(luku1 + " * " + luku2 +  " = " + tulos);
+            luku2 = int.Parse(Console.ReadLine());
+            tulos = (double)luku1 + luku2;
+            Console.WriteLine(luku1 + " + " + luku2 + " = " + tulos);
             Console.WriteLine("Paina jotain");
             Console.ReadKey();
-            
-            char harjoitus28;
-            double kilohinta;
-            double paljofyrkkaa;
-            double namia;
+        }
+    }
+}
 
-            Console.Write("Anna kilohinta: ");
-            kilohinta = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Anna rahamäärä: ");
-            paljofyrkkaa = Convert.ToDouble(Console.ReadLine());
-
-            namia = (double)paljofyrkkaa / kilohinta;
-            Console.WriteLine("Namia saat " + String.Format("{0:0.00}", namia) + " kiloa");
+namespace harjoitus36
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double sade, ala , pii;
+            Console.Write("Anna ympyrän säde: ");
+            pii = Math.PI;
+            sade = int.Parse(Console.ReadLine());
+            ala = (double)pii * sade * sade;
+            Console.WriteLine("Ympyrän ala on " + ala);
             Console.WriteLine("Paina jotain");
             Console.ReadKey();
+        }
+    }
+}
 
-            char harjoitus29;
-            double bruttopalkka;
-            double veropros;
-            double nettopalkka;
-            double vero;
-
-            Console.Write("Anna bruttopalkka: ");
-            bruttopalkka = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Anna veropros%: ");
-            veropros = Convert.ToDouble(Console.ReadLine());
-
-            vero = (double)bruttopalkka * veropros / 100;
-            nettopalkka = (double)bruttopalkka - vero;
-            Console.WriteLine("Rahaa käteen tulloopi " + String.Format("{0:0.00}", nettopalkka) + " euroa");
-            Console.WriteLine("Paina jotain");
-            Console.ReadKey();
-
-            char harjoitus210;
-            */
-
+namespace harjoitus37
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
             double pituus;
             double paino;
             double tuplapituus;
             double painokerroin;
 
             Console.Write("Anna pituutesi: ");
-            pituus = Convert.ToDouble(Console.ReadLine());
+            pituus = double.Parse(Console.ReadLine());
             Console.Write("Anna painosi: ");
-            paino = Convert.ToDouble(Console.ReadLine());
+            paino = double.Parse(Console.ReadLine());
 
             tuplapituus = (double)pituus * pituus / 10000;
             painokerroin = (double)paino / tuplapituus;
             Console.WriteLine("Painokertoimesi on " + String.Format("{0:0.00}", painokerroin) + " ja LAIHDUTA");
             Console.WriteLine("Paina jotain");
             Console.ReadKey();
-                                          
         }
     }
 }
+
+namespace harjoitus38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double luku1, luku2, tulos;
+            string merkki;
+
+            Console.Write("Anna luku1: ");
+            luku1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Anna luku2: ");
+            luku2 = int.Parse(Console.ReadLine());
+            
+            Console.Write("Anna laskutapa : ");
+            merkki = Console.ReadLine();
+
+            string lause = luku1 + merkki + luku2 + " = ";
+
+            if (merkki == "*")
+            {
+                tulos = (double)luku1 * luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "+")
+            {
+                tulos = (double)luku1 + luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "-")
+            {
+                tulos = (double)luku1 - luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else if (merkki == "/")
+            {
+                tulos = (double)luku1 / luku2;
+                Console.WriteLine(lause + tulos);
+            }
+            else 
+            {
+                Console.WriteLine("nyt yrität jotain kvanttifysiikkaa");
+            }
+
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+*/
+namespace harjoitus311
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int lampotila;
+            string merkki;
+
+            Console.Write("Anna veden lämpötila: ");
+            lampotila = int.Parse(Console.ReadLine());
+
+            if (lampotila > 100)
+            {
+                Console.WriteLine("höyryä");
+            }
+            else if (lampotila > 0)
+            {
+                Console.WriteLine("vettä");
+            }
+            else if (lampotila > -273)
+            {
+                Console.WriteLine("jäätä");
+                        }
+            else
+            {
+                Console.WriteLine("män alle absoluuttisen nollapisteen");
+            }
+
+            Console.WriteLine("Paina jotain");
+            Console.ReadKey();
+        }
+    }
+}
+
+
